@@ -24,8 +24,6 @@ The Internet Dataset (Rubinstein CVPR 2013)
 >Car: P 0.8937 J 0.6920
 >Horse: P 0.8805 J 0.4446
 
-If you fail to reproduce the result, please feel free to contact me (xinleic@cs.cmu.edu).
-
 Credit goes to:
  
 0. Bharath Hariharan et al for Exemplar LDA code; 
@@ -35,6 +33,6 @@ Credit goes to:
 4. Alexander Vezhnevets et al for code that transfers masks for figure ground segmentation; 
 5. Miki Rubinstein et al for the datasets and evaluation codes.
 
-If you find anything (like a bug or missing credit), feel free to contact me (xinleic@cs.cmu.edu).
+If you find anything (like a bug or missing credit or failure to reproduce the results), feel free to contact me (enderchen@cs.cmu.edu).
 
 Xinlei Chen, CMU
