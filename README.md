@@ -26,6 +26,15 @@ The Internet Dataset (Rubinstein CVPR 2013)
 
 If you fail to reproduce the result, please feel free to contact me (xinleic@cs.cmu.edu).
 
-Credit goes to 0) Bharath Hariharan et al for Exemplar LDA code; 1) Olga Veksler for Graph Cut and Max Flow code; 2) Piotr Dollar and Larry Zitnick for Structured Edge Detection Toolbox; and 3) Deformable Part Model version 5; 4) Alexander Vezhnevets et al for code that transfers masks for figure ground segmentation; 5) Miki Rubinstein et al for the datasets and evaluation codes.
+Credit goes to:
+ 
+0. Bharath Hariharan et al for Exemplar LDA code; 
+1. Olga Veksler for Graph Cut and Max Flow code; 
+2. Piotr Dollar and Larry Zitnick for Structured Edge Detection Toolbox; 
+3. Deformable Part Model version 5; 
+4. Alexander Vezhnevets et al for code that transfers masks for figure ground segmentation; 
+5. Miki Rubinstein et al for the datasets and evaluation codes.
+
+If you find anything (like a bug or missing credit), feel free to contact me (xinleic@cs.cmu.edu).
 
 Xinlei Chen, CMU
