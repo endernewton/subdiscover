@@ -13,16 +13,18 @@ For negative data to train Latent SVMs, in principle you can use any data you wa
 
 For reference, the new results (if you fix the random seed is)
 
->>The Internet Dataset (Rubinstein CVPR 2013)
-Airplane: P 0.9219 J 0.6087
-Car: P 0.8728 J 0.6274
-Horse: P 0.9011 J 0.6023
+The Internet Dataset (Rubinstein CVPR 2013)
+>Airplane: P 0.9219 J 0.6087
+>Car: P 0.8728 J 0.6274
+>Horse: P 0.9011 J 0.6023
 
->>100 Samples from The Internet Dataset
-Airplane: P 0.8992 J 0.5462
-Car: P 0.8937 J 0.6920
-Horse: P 0.8805 J 0.4446
+100 Samples from The Internet Dataset
+>Airplane: P 0.8992 J 0.5462
+>Car: P 0.8937 J 0.6920
+>Horse: P 0.8805 J 0.4446
 
 If you fail to reproduce the result, please feel free to contact me (xinleic@cs.cmu.edu).
+
+Credit goes to 1) Olga Veksler for Graph Cut and Max Flow code; 2) Piotr Dollar and Larry Zitnick for Structured Edge Detection Toolbox; and 3) Deformable Part Model version 5; 4) Alexander Vezhnevets, Matthieu Guillaumin, et al for code that transfers masks.
 
 Xinlei Chen, CMU
