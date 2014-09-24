@@ -53,7 +53,7 @@ options.overlapDouble = 0.5; % maximum overlap between two patches in the same '
 options.sizeThres = 5; % threshold for the minimum number of instances in each cluster
 options.maxIterMerge = 0.8; % final clustering for merging
 options.minIterMerge = 0.5; % probe clustering to get rid of bad images
-options.maxSimiMerge = 0.5; % final clustering for merging
+options.maxSimiMerge = 0.6; % final clustering for merging
 options.minSimiMerge = 0.2; % probe clustering to get rid of bad images
 
 % latent SVM training
