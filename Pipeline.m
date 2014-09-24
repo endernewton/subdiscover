@@ -62,4 +62,7 @@ objGetDetectionsWrapper(iid,options);
 %% Transfer The Segmentation Labels and Get the final Segmentations
 TransferClusteringWrapper(iid,options);
 
+%% Evaluation, Code from http://people.csail.mit.edu/mrub/ObjectDiscovery/
+EvaluateDataSetWrapper(iid,options);
+
 % end of the pipeline

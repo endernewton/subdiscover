@@ -1,4 +1,4 @@
-This code base is for paper:
+This code base is for the paper:
 
 Chen, Xinlei, Abhinav Shrivastava, and Abhinav Gupta. 
 "Enriching Visual Knowledge Bases via Object Discovery and Segmentation." CVPR, 2014.
@@ -9,9 +9,9 @@ I made major modifications after the paper got published:
 2. The default option is HOG instead of Colored HOG, the performance does not change that much;
 3. Can fix the random seed. The original experiments for CVPR 2014 were done on a computing cluster where each node had its own random seeds. This makes the results not reproducable. Now it is fixed.
 
-For negative data to train Latent SVMs, in principle you can use any data you want, but I have provided the negative dataset at my project page (http://www.cs.cmu.edu/~xinleic/seg.html).
+For negative data to train Latent SVMs, in principle you can use any data you want, but I have provided the negative dataset we used at my project page (http://www.cs.cmu.edu/~xinleic/seg.html).
 
-For reference, the new results (if you fix the random seed is)
+For reference, the new results (if you fix the random seed) are
 
 The Internet Dataset (Rubinstein CVPR 2013)
 >Airplane: P 0.9219 J 0.6087
@@ -25,6 +25,6 @@ The Internet Dataset (Rubinstein CVPR 2013)
 
 If you fail to reproduce the result, please feel free to contact me (xinleic@cs.cmu.edu).
 
-Credit goes to 1) Olga Veksler for Graph Cut and Max Flow code; 2) Piotr Dollar and Larry Zitnick for Structured Edge Detection Toolbox; and 3) Deformable Part Model version 5; 4) Alexander Vezhnevets, Matthieu Guillaumin, et al for code that transfers masks.
+Credit goes to 1) Olga Veksler for Graph Cut and Max Flow code; 2) Piotr Dollar and Larry Zitnick for Structured Edge Detection Toolbox; and 3) Deformable Part Model version 5; 4) Alexander Vezhnevets, Matthieu Guillaumin, et al for code that transfers masks 5) Miki Rubinstein et al for the datasets and evaluation codes.
 
 Xinlei Chen, CMU
