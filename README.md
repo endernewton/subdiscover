@@ -9,7 +9,7 @@ I made major modifications after the paper got published:
 2. The default option is HOG instead of Colored HOG, the performance does not change that much;
 3. Can fix the random seed. The original experiments for CVPR 2014 were done on a computing cluster where each node had its own random seeds. This makes the results not reproducable. Now it is fixed.
 
-For negative data to train Latent SVMs, in principle you can use any data you want, but I have provided the negative dataset at my project page.
+For negative data to train Latent SVMs, in principle you can use any data you want, but I have provided the negative dataset at my project page (http://www.cs.cmu.edu/~xinleic/seg.html).
 
 For reference, the new results (if you fix the random seed is)
 
