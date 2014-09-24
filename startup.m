@@ -48,11 +48,12 @@ options.poolSbin = 8;
 % second-step clustering
 options.ratioS = 0.5;
 options.ratioDK = 0.8; % how much of the data should be kept, so 0.8 means 20% of the data is noise
+options.sizeDK = 70; % if the cluster is too big, then probably you would still keep them, this is especially the case for large collections of data
 options.topN = 10; % number of top detections to be used
 options.overlapDouble = 0.5; % maximum overlap between two patches in the same 'detection'
 options.sizeThres = 5; % threshold for the minimum number of instances in each cluster
-options.maxIterMerge = 0.8; % final clustering for merging
-options.minIterMerge = 0.5; % probe clustering to get rid of bad images
+options.maxIterMerge = 0.8; % probe clustering to get rid of bad images
+options.minIterMerge = 0.5; % final clustering for merging
 options.maxSimiMerge = 0.6; % final clustering for merging
 options.minSimiMerge = 0.2; % probe clustering to get rid of bad images
 
