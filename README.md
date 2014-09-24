@@ -1,6 +1,6 @@
 This code base is for the paper:
 
-Chen, Xinlei, Abhinav Shrivastava, and Abhinav Gupta. 
+Xinlei Chen, Abhinav Shrivastava, and Abhinav Gupta. 
 "Enriching Visual Knowledge Bases via Object Discovery and Segmentation." CVPR, 2014.
 
 I made major modifications after the paper got published:
