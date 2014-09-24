@@ -5,6 +5,7 @@ Chen, Xinlei, Abhinav Shrivastava, and Abhinav Gupta.
 
 I made major modifications after the paper got published:
 
+0. Initial seeds for ELDA training is done by cropping with the edge map produced by Structured Edge Detection Toolbox;
 1. For subcategory discovery, instead of spectral clustering, this code simply merges the initial clusters (formed by ELDA top detections), it works pretty well and runs much faster;
 2. The default option is HOG instead of Colored HOG, the performance does not change that much;
 3. Can fix the random seed. The original experiments for CVPR 2014 were done on a computing cluster where each node had its own random seeds. This makes the results not reproducable. Now it is fixed.
@@ -25,6 +26,6 @@ The Internet Dataset (Rubinstein CVPR 2013)
 
 If you fail to reproduce the result, please feel free to contact me (xinleic@cs.cmu.edu).
 
-Credit goes to 1) Olga Veksler for Graph Cut and Max Flow code; 2) Piotr Dollar and Larry Zitnick for Structured Edge Detection Toolbox; and 3) Deformable Part Model version 5; 4) Alexander Vezhnevets, Matthieu Guillaumin, et al for code that transfers masks 5) Miki Rubinstein et al for the datasets and evaluation codes.
+Credit goes to 0) Bharath Hariharan et al for Exemplar LDA code; 1) Olga Veksler for Graph Cut and Max Flow code; 2) Piotr Dollar and Larry Zitnick for Structured Edge Detection Toolbox; and 3) Deformable Part Model version 5; 4) Alexander Vezhnevets et al for code that transfers masks for figure ground segmentation; 5) Miki Rubinstein et al for the datasets and evaluation codes.
 
 Xinlei Chen, CMU
