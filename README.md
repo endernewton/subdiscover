@@ -5,7 +5,7 @@ Xinlei Chen, Abhinav Shrivastava, and Abhinav Gupta.
 
 I made major modifications after the paper got published:
 
-0. Initial seeds for ELDA training is done by cropping with the edge map produced by Structured Edge Detection Toolbox;
+0. Initial seeds for ELDA training are produced by cropping each image using the edge map produced by Structured Edge Detection Toolbox;
 1. For subcategory discovery, instead of spectral clustering, this code simply merges the initial clusters (formed by ELDA top detections), it works pretty well and runs much faster;
 2. The default option is HOG instead of Colored HOG, the performance does not change that much;
 3. Can fix the random seed. The original experiments for CVPR 2014 were done on a computing cluster where each node had its own random seeds. This makes the results not reproducable. Now it is fixed.
