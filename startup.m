@@ -31,7 +31,7 @@ options.cachefolder = '/home/xinleic/Segmentation/CachesR/'; % cache intermediat
 options.resultfolder = '/home/xinleic/Segmentation/ResultsR/'; % folder that holds the result
 options.eldafile = [pwd,'/subclass/elda/background.mat']; % background file for ELDA, representing the negative world
 options.generalpriorfile = [pwd,'/prior.mat']; % segmentation prior for objects, used when no segmentation prior is learned for that class
-options.lsvmNegFolders = {'/hom/xinleic/Datasets/Google/Images/ScenesSub/'}; % negative image sets used for training detectors
+options.lsvmNegFolders = {'/home/xinleic/Datasets/Google/Images/ScenesSub/'}; % negative image sets used for training detectors
 
 % elda Training/Testing
 options.initCandMeth = 'sed'; % full or sed, methods used for initial bboxes
