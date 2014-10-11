@@ -58,7 +58,7 @@ if isfield(options,'minSimiMerge')
 end
 
 load(topfiles,'detectors','topNscores','topNresults','detectionimages');
-nDetectors = length(detectors);
+nDetectors = size(detectors, 1);
 
 % augment the detectors
 for i=1:nDetectors
