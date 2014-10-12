@@ -25,12 +25,12 @@ options.fixedSeed = 1; % if use fixed random seed
 
 %% Below is the options for all paths, for new datasets you will have to set the path yourself
 % data
-options.datafolder = '/IUS/homes4/rohytg/projects/003_SelfieSeg/datasets/selfie_tiny/'; % directory that contains the datasets to run, in the format of PATH/DATASET/CATEGORY/,
-% e.g. Rubinstein100/Car/ has ONLY .jpg images, where Rubinstein100/Car/GroundTruth has .png ground truth.
+options.datafolder = '/IUS/homes4/rohytg/projects/003_SelfieSeg/datasets/selfie_tiny/'; % PATH to the directory that contains all the datasets to run, in the format of PATH/DATASET/CATEGORY/,
+% e.g. PATH/Rubinstein100/Car/ has ONLY .jpg images, where PATH/Rubinstein100/Car/GroundTruth has .png ground truth.
 options.cachefolder = fullfile(pwd, 'CachesR/'); % cache intermediate files
 options.resultfolder = fullfile(pwd, 'ResultsR/'); % folder that holds the result
 options.eldafile = fullfile(pwd,'/subclass/elda/background.mat'); % background file for ELDA, representing the negative world
-options.generalpriorfile = fullfile(pwd,'grabcut/prior.mat'); % segmentation prior for objects, used when no segmentation prior is learned for that class
+options.generalpriorfile = fullfile(pwd,'/grabcut/prior.mat'); % segmentation prior for objects, used when no segmentation prior is learned for that class
 options.lsvmNegFolders = {'/IUS/homes4/rohytg/projects/003_SelfieSeg/datasets/ScenesSub/'}; % negative image sets used for training detectors
 
 % elda Training/Testing

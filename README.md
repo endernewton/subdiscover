@@ -3,6 +3,13 @@ This code base is for the paper:
 Xinlei Chen, Abhinav Shrivastava, and Abhinav Gupta. 
 "Enriching Visual Knowledge Bases via Object Discovery and Segmentation." CVPR, 2014.
 
+Usage:
+
+0. Set up the path to your data in startup.m, mainly data path and cache path, the code will loop over all the datasets in the data folder create files in the cache folder;
+1. If you do not have ground truth, that's fine, just leave it and do not evaluate the results;
+2. See Pipeline.m for the order of functions to call;
+4. In general this code is suitable for computing clusters, though you can run small-scale experiments on a single machine.
+
 I made major modifications after the paper got published:
 
 0. Initial seeds for ELDA training are produced by cropping each image using the edge map produced by Structured Edge Detection Toolbox;
