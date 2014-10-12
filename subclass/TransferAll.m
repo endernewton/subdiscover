@@ -243,7 +243,7 @@ for i=1:li
                 dmask = SegmentLoc(im,dmask,options);
 
                 rate = evalSegs(dmask,bbox);
-                brate = evalSegArea(dmask,bbox);s
+                brate = evalSegArea(dmask,bbox);
                 disp(rate);
 
                 if rate > badSegRate
