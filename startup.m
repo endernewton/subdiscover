@@ -18,20 +18,20 @@ options = [];
 
 % time
 options.now = 0;
-options.timelimit = 2 * 3600; % time limit to run each component
+options.timelimit = 10 * 3600; % time limit to run each component
 
 % seed
 options.fixedSeed = 1; % if use fixed random seed
 
 %% Below is the options for all paths, for new datasets you will have to set the path yourself
 % data
-options.datafolder = '/home/xinleic/Segmentation/DataR/'; % PATH to the directory that contains all the datasets to run: it will loop over all the datasets and categories under PATH, 
-% e.g. PATH/Rubinstein100/Car/ has .jpg images, where PATH/Rubinstein100/Car/GroundTruth has .png ground truth.
-options.cachefolder = '/home/xinleic/Segmentation/CachesR/'; % cache intermediate files
-options.resultfolder = '/home/xinleic/Segmentation/ResultsR/'; % folder that holds the result
-options.eldafile = [pwd,'/subclass/elda/background.mat']; % background file for ELDA, representing the negative world
-options.generalpriorfile = [pwd,'/grabcut/prior.mat']; % segmentation prior for objects, used when no segmentation prior is learned for that class
-options.lsvmNegFolders = {'/home/xinleic/Datasets/Google/Images/ScenesSub/'}; % negative image sets used for training detectors
+options.datafolder = '/IUS/homes4/rohytg/projects/003_SelfieSeg/datasets/selfie_tiny/'; % PATH to the directory that contains all the datasets to run, in the format of PATH/DATASET/CATEGORY/,
+% e.g. PATH/Rubinstein100/Car/ has ONLY .jpg images, where PATH/Rubinstein100/Car/GroundTruth has .png ground truth.
+options.cachefolder = fullfile(pwd, 'CachesR/'); % cache intermediate files
+options.resultfolder = fullfile(pwd, 'ResultsR/'); % folder that holds the result
+options.eldafile = fullfile(pwd,'/subclass/elda/background.mat'); % background file for ELDA, representing the negative world
+options.generalpriorfile = fullfile(pwd,'/grabcut/prior.mat'); % segmentation prior for objects, used when no segmentation prior is learned for that class
+options.lsvmNegFolders = {'/IUS/homes4/rohytg/projects/003_SelfieSeg/datasets/ScenesSub/'}; % negative image sets used for training detectors
 
 % elda Training/Testing
 options.initCandMeth = 'sed'; % full or sed, methods used for initial bboxes
@@ -49,9 +49,9 @@ options.poolSbin = 8;
 options.ratioS = 0.5;
 options.ratioDK = 0.8; % how much of the data should be kept, so 0.8 means 20% of the data is noise
 options.sizeDK = 70; % if the cluster is too big, then probably you would still keep them, this is especially the case for large collections of data
-options.topN = 10; % number of top detections to be used
+options.topN = 4; % (rohit) WHY?? number of top detections to be used
 options.overlapDouble = 0.5; % maximum overlap between two patches in the same 'detection'
-options.sizeThres = 5; % threshold for the minimum number of instances in each cluster
+options.sizeThres = 1; % (rohit) CHANGE THIS!!! threshold for the minimum number of instances in each cluster
 options.maxIterMerge = 0.8; % probe clustering to get rid of bad images
 options.minIterMerge = 0.5; % final clustering for merging
 options.maxSimiMerge = 0.6; % final clustering for merging
@@ -64,7 +64,7 @@ options.cachebyte = 2*2^30;
 options.wlssvmM = 0;
 options.fgOverlap = 0.7;
 options.bFlipPos = 1;
-options.imSubDir = '/images'; % sub directory in each folder in options.lsvmNegFolders that contains images
+options.imSubDir = ''; % sub directory in each folder in options.lsvmNegFolders that contains images
 options.trainPath = 'train_path.mat';
 options.lowerNeg = 3; % starting index for negative images, not important
 options.higherNeg = 12; % ending index for negative images, not important
@@ -101,4 +101,4 @@ options.maskThres = 0.5; % threshold on the mask to initialize fg/bg appearance 
 options.overlapDet = 0.5; % NMS to get the good detections
 options.ratioMax = 0.7; % ratio to the maxium number of detections for detection
 options.canSize = 200; % cannonical size for averaging the segmentation
-options.dumpTempImages = 0; % whether to dump the temp images
+options.dumpTempImages = 1; % whether to dump the temp images
