@@ -1,7 +1,12 @@
-This code base is for the paper:
+This code base is mainly for the paper:
 
 Xinlei Chen, Abhinav Shrivastava, and Abhinav Gupta. 
 "Enriching Visual Knowledge Bases via Object Discovery and Segmentation." CVPR, 2014.
+
+However, by ignoring the segmentation part, you can also use it to clean up web data, which is proposed in:
+
+Xinlei Chen, Abhinav Shrivastava, and Abhinav Gupta. 
+"NEIL: Extracting Visual Knowledge from Web Data." ICCV, 2013.
 
 Usage:
 
@@ -9,6 +14,7 @@ Usage:
 1. If you do not have ground truth, that's fine, just leave it and do not evaluate the results;
 2. See Pipeline.m for the order of functions to call;
 4. In general this code is suitable for computing clusters, though you can run small-scale experiments on a single machine.
+5. I have only tested it on Linux, but please do let me know if you get it working on Windows machines.
 
 I made major modifications after the paper got published:
 
